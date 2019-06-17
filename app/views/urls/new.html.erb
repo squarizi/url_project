@@ -1,0 +1,5 @@
+<%= bootstrap_form_for @url, inline_errors: false do |f| %>
+    <%= f.alert_message t("errors.alert", count: @url.errors.count, model: "URL") %>
+    <%= f.text_field :long_url, class: "input-lg", placeholder: true %>
+    <%= f.submit class: "btn btn-primary btn-lg" %>
+<% end %>

@@ -1,0 +1,22 @@
+<section>
+  <div class="col-md-12">
+    <div class="error-template">
+      <h1>
+        Oops!
+      </h1>
+      <h2>
+        404 Not Found
+      </h2>
+      <p class="error-details">
+        You tried to access '<span class="bad-path"><%= @not_found_path %></span>',
+        which is not a valid page.
+      </p>
+      <div class="error-actions">
+        <%= link_to root_url, class: "btn btn-primary btn-lg" do %>
+            <span class="glyphicon glyphicon-home"></span>
+            Take Me Home
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
